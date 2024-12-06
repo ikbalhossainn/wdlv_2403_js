@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/alert.js"></script>
+  </head>
+  <body>
+    <h2 style="color: blue;">JavaScript Statement</h2>
+
+    <h1 id="demo"></h1>
+    <h2 class="sonamoni"></h2>
+    <script>
+      let a,b,c // variable declaration
+      a = 1;
+      b = 2;
+      c = a + b;
+      d = "Puspa";
+      e = d + ", Puspa Raj. Jukhega nehi sala";
+      f = "I watched Puspa Movie " + c + " times."
+      document.getElementById("demo").innerHTML = e;
+      document.getElementsByClassName("sonamoni")[0].innerHTML = f;
+    </script>
+
+
+    <h2 style="color: blue;">JavaScript Code Blocks</h2>
+    <p>JavaScript statements can be grouped together in code blocks, inside curly brackets {...}. <br>
+       The purpose of code blocks is to define statements to be executed together. <br>
+       One place you will find statements grouped together in blocks, is in JavaScript functions:
+    </p>
+
+
+    <button type="button" onclick="myFunction()">Click Me</button>
+    <!-- or <button type="button" onclick="document.write(5+6)">Click Me</button> -->
+
+    <h3 id="demo1"></h3>
+    <h3 id="demo2"></h3>
+    <script>
+        function myFunction(){
+            document.getElementById("demo1").innerHTML = "Hi, Sweet Dear"
+        }
+    </script>
+
+  </body>
+</html>
