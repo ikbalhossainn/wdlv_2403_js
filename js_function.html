@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h3>The value of function result: </h3>
+  </head>
+  <body>
+    <!-- Function without parameter -->
+    <h1 style="color: blue">Function without parameter</h1>
     <h3 class="demo"></h3>
     <h3 class="demo1"></h3>
+    <h3 id="demo"></h3>
     <script>
-        function summation(){
-            document.getElementsByClassName('demo')[0].innerHTML = 5+6; // getElementsByClassName returns a collection, so you must use [0] (or another index) to access the first element.
-            document.querySelector(".demo1").innerHTML = 5%2;
-            console.log(5+6);
-        }
-        summation();
+      function summation() {
+        document.getElementsByClassName("demo")[0].innerHTML =
+          "The summation of 5+6 is: " + (5 + 6); // getElementsByClassName returns a collection, so you must use [0] (or another index) to access the first element.
+
+        document.querySelector(".demo1").innerHTML =
+          "The modulus of 5/2 is: " + (5 % 2);
+
+        document.getElementById("demo").innerHTML =
+          "The product of 10*2 is: " + 10 * 2;
+        console.log(5 + 6);
+      }
+      summation();
     </script>
-</body>
+
+
+
+
+    <!-- Function with parameter -->
+    <h1 style="color: blue">Function with parameter</h1>
+    
+    <script>
+
+    </script>
+
+  </body>
 </html>
