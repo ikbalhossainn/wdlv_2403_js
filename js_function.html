@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>The value of function result: </h3>
+    <h3 class="demo"></h3>
+    <h3 class="demo1"></h3>
+    <script>
+        function summation(){
+            document.getElementsByClassName('demo')[0].innerHTML = 5+6; // getElementsByClassName returns a collection, so you must use [0] (or another index) to access the first element.
+            document.querySelector(".demo1").innerHTML = 5%2;
+            console.log(5+6);
+        }
+        summation();
+    </script>
+</body>
+</html>
