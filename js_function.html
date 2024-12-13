@@ -21,7 +21,7 @@
 
         document.getElementById("demo").innerHTML =
           "The product of 10*2 is: " + 10 * 2;
-        console.log(5 + 6);
+        console.log(10 + 20); // Output: 30
       }
       summation();
     </script>
@@ -29,12 +29,40 @@
 
 
 
-    <!-- Function with parameter -->
-    <h1 style="color: blue">Function with parameter</h1>
-    
-    <script>
+    <!-- Function with Return -->
+    <h1 style="color: blue">Function with Return</h1>
 
+    <h3 id="ami"></h3>
+    <script>
+      function add(a, b) {
+        return a + b; // Explicitly returning the sum of a and b
+      }
+      document.querySelector("#ami").innerHTML =
+        "The Result of Addition is: " + add(5, 6);
+      // or
+      console.log(add(5, 6)); // Output: 11
     </script>
 
+
+
+
+    <h3 id="tumi"></h3>
+    <script>
+      function sum(a, b) {
+        let s = a * b;
+        return s;
+        // return(s);
+      }
+
+      let value = sum(15, 30);
+      console.log(value); // Output: 450
+      // or
+
+      let firstNumber = 15;
+      let secondNumber = 30;
+      let msg = `The multiplication of ${firstNumber} & ${secondNumber} is: `
+      let val = sum(firstNumber, secondNumber);
+      document.querySelector('#tumi').innerHTML = msg + val;
+    </script>
   </body>
 </html>
