@@ -64,5 +64,23 @@
       let val = sum(firstNumber, secondNumber);
       document.querySelector('#tumi').innerHTML = msg + val;
     </script>
+
+
+<!-- Lets Try it another way -->
+
+    <h3 id="se"></h3>
+    <script>
+        function action(number){
+            let s = number[0] * number[1];
+            return s;
+        }
+        let numbers = [20, 50];
+        let output = action(numbers);
+        //let msg = `The multiplication of ${number} is: `;
+        //let result = msg + output;
+
+        document.querySelector('#se').innerHTML = output;
+        
+    </script>
   </body>
 </html>
