@@ -7,6 +7,37 @@
   </head>
   <body>
     <!-- Arrow Function -->
+     <h1>Arrow Function without parameter</h1>
+     <script>
+        const printHellow = () => {
+            document.write("Hello Dear");
+        }
+        printHellow();
+     </script>
+
+
+    <h1>Arrow Function without return</h1>
+    <script>
+    const mul = (a, b) => {
+        
+        s = a * b;
+        document.write(s + "<br>");
+
+        k = 10;
+        document.write(k + "<br>");
+
+        document.write(a + "<br>" + "<br>"); 
+
+        document.write(mul);
+        
+    };
+
+        mul(50,50);
+    </script>
+
+
+
+
     <h1>Arrow Function with return</h1>
     <script>
       const sum = (a, b) => {
@@ -19,27 +50,6 @@
       document.write(val + "<br>" + "<br>");
 
       document.write(sum);
-    </script>
-
-
-
-    <h1>Arrow Function without return</h1>
-    <script>
-      const mul = (a, b) => {
-        
-        s = a * b;
-        document.write(s + "<br>");
-
-        k = 10;
-        document.write(k + "<br>");
-
-        document.write(a + "<br>" + "<br>"); 
-
-        document.write(mul);
-        
-      };
-
-        mul(50,50);
     </script>
   </body>
 </html>
