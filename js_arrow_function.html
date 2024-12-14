@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Arrow Function -->
-    <h1>Arrow Function</h1>
+    <h1>Arrow Function with return</h1>
     <script>
-        const sum = (a,b)=>{
-            s = a+b;
-            console.log(a);
-            return s;
-        }
-        
-        let val = sum(3,4) 
-        console.log(val);
+      const sum = (a, b) => {
+        s = a + b;
+        document.write(a + "<br>"); ;
+        return s;
+      };
+
+      let val = sum(3, 4);
+      document.write(val);
     </script>
-</body>
+
+
+
+    <h1>Arrow Function without return</h1>
+    <script>
+      const mul = (a, b) => {
+        
+        s = a * b;
+        document.write(s + "<br>");
+
+        k = 10;
+        document.write(k + "<br>");
+
+        document.write(a + "<br>"); 
+        
+      };
+
+        mul(50,50);
+    </script>
+  </body>
 </html>
